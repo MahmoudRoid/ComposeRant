@@ -26,3 +26,4 @@ dependencyResolutionManagement {
 rootProject.name = "Compose"
 include(":app")
 include(":base")
+include(":network")
