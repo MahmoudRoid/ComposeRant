@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Compose</string>
+    <string name="io_error_message">Something went wrong!</string>
+    <string name="network_error_message">Problem Connecting!</string>
+    <string name="server_error_message">Server Error!</string>
+    <string name="not_found_error_message">Not Found!</string>
+    <string name="not_authenticated_error_message">Not Authenticated</string>
+    <string name="permission_denied_error_message">Access Denied!</string>
+    <string name="no_internet_error_message">Check your internet connection</string>
+    <string name="unknown_error_message">Unknown Error!</string>
+    <string name="general_notification_channel_description">General notification channel</string>
+    <string name="general_notification_channel_name">Parniyan Event</string>
 </resources>

@@ -55,24 +55,29 @@ android {
 dependencies {
     implementation(project(":base"))
     implementation(project(":network"))
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
+    implementation(libs.android.core.splashscreen)
+    implementation(libs.android.datastore.preferences)
+    implementation(libs.android.datastore.preferences)
+
+    implementation(libs.bundles.compose)
+    implementation(libs.compose.accompanist.navigation)
+    implementation(libs.compose.navigation.hilt)
+    implementation(libs.androidx.appcompat)
+
+    debugImplementation(libs.compose.ui.tooling)
+
+    implementation(libs.ktor.client.core)
+
+
+    implementation(libs.hilt)
+    ksp(libs.hilt.compiler)
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
+
+    //worker
+    implementation(libs.androidx.work.runtime.ktx)
+    implementation(libs.android.work.hilt)
+   // ksp(libs.android.work.hilt.compiler)
     implementation(libs.compose.material3)
-    implementation(libs.androidx.fragment.ktx)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.androidx.ui.tooling)
-    debugImplementation(libs.androidx.ui.test.manifest)
-    implementation(libs.hilt.android)
-    implementation(libs.hilt.compiler)
-    implementation(libs.material)
 }
